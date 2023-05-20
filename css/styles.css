@@ -478,7 +478,16 @@ border-radius: 2px;
 }
 
 /*Section_2*/
+
+
+.section-two{
+  display: none;
+}
+
+
+@media only screen and (min-width: 1158px) {
 .section-two {
+  display: block;
  padding-bottom: 120px;
 }
 
@@ -504,6 +513,7 @@ border-radius: 2px;
 
 .item-section-two {
  width: calc((100% - 48px) / 3);
+}
 }
 
 /*Section_3*/
