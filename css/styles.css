@@ -415,22 +415,31 @@ border-radius: 2px;
   width: 396px;
   margin-bottom: 8px;
   justify-content: center;
- font-weight: 700;
- font-size: 36px;
- line-height: 1.1;
- letter-spacing: 0.02em;
- text-transform: capitalize;
- color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
 }
+
+
+@media only screen and (min-width: 768px) {
+  .subtitle-section-one {
+    justify-content: start;
+    width: 100%;
+  }
+}
+
+
 
 @media only screen and (min-width: 1158px) {
   .subtitle-section-one{
     justify-content: start;
     width: 100%;
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -445,6 +454,27 @@ border-radius: 2px;
 
 .text-section-one {
  color: var(--main-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .text-section-one {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 351px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .text-section-one  {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+  }
 }
 
 /*Section_2*/
