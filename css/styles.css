@@ -344,13 +344,16 @@ border-radius: 2px;
 
 @media only screen and (min-width: 768px){
   .list-section-one {
+    flex-wrap: wrap;
   gap: 24px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
 .list-section-one {
- gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
  /*outline: 2px solid red;*/
 }
 }
@@ -358,12 +361,14 @@ border-radius: 2px;
 @media only screen and (min-width:768px){
   .item-section-one {
    flex-basis: calc((100% - 24px) / 2);
+   width: 356px;
   }
   }
 
 @media only screen and (min-width: 1158px){
   .item-section-one {
  flex-basis: calc((100% - 72px) / 4);
+ width: 264px;
 }
 }
 
@@ -420,6 +425,8 @@ border-radius: 2px;
 
 @media only screen and (min-width: 1158px) {
   .subtitle-section-one{
+    justify-content: start;
+    width: 100%;
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
