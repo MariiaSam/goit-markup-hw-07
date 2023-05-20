@@ -406,11 +406,25 @@ border-radius: 2px;
 
 .subtitle-section-one,
 .subtitle-section-three {
- font-weight: 500;
- font-size: 20px;
- line-height: 1.2;
+  display: flex;
+  width: 396px;
+  margin-bottom: 8px;
+  justify-content: center;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.1;
  letter-spacing: 0.02em;
+ text-transform: capitalize;
  color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 1158px) {
+  .subtitle-section-one{
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+
+  }
 }
 
 .text-section-one,
