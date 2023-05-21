@@ -303,7 +303,7 @@ border-radius: 2px;
 }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
   .hero { 
     max-width: 1440px;
     
@@ -327,6 +327,7 @@ border-radius: 2px;
     rgba(46, 47, 66, 0.7)), url('../images/hero/_desk_hero@2x.jpg');
 }
 }
+
 
  
  .container-hero {
