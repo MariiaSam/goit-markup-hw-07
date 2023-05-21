@@ -721,7 +721,8 @@ Customers*/
 
 
 @media only screen and (min-width: 768) {
-  .list-section-four{ justify-content: center;
+  .list-section-four{ 
+    justify-content: space-between;
     gap: 72px 24px;
   }
 }
