@@ -724,6 +724,7 @@ Customers*/
   .list-section-four{ 
     justify-content: space-between;
     gap: 72px 24px;
+    margin-right: 0 auto;
   }
 }
 
