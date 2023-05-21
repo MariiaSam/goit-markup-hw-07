@@ -241,7 +241,6 @@ border-radius: 2px;
 .address-link:focus {
  color: var(--focus-nav-color);
 }
-}
 
 /*MAIN*/
 
@@ -251,7 +250,6 @@ border-radius: 2px;
 
 
 .hero{
-    min-width: 1440px;
     background-color: var(--secondary-bgc-color);
     padding-top: 112px;
     padding-bottom: 112px;
@@ -260,15 +258,17 @@ border-radius: 2px;
     background-size: cover;
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)), url(../images/hero/_mob_hero@1x.jpg);
+      rgba(46, 47, 66, 0.7)), url('../images/hero/_mob_hero@1x.jpg');
 }
+
+
 
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
    .hero{
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)), url(../images/hero/_mob_hero@2x.jpg);
+      rgba(46, 47, 66, 0.7)), url('../images/hero/_mob_hero@2x.jpg');
   }
 }
 
@@ -276,14 +276,14 @@ border-radius: 2px;
    .hero{
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/hero/_tab_hero@1x.jpg);
+    rgba(46, 47, 66, 0.7)), url('../images/hero/_tab_hero@1x.jpg');
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero{
       background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)), url(../images/hero/_tab_hero@1x.jpg);
+      rgba(46, 47, 66, 0.7)), url('../images/hero/_tab_hero@1x.jpg');
   }
 }
 
@@ -291,13 +291,13 @@ border-radius: 2px;
   .hero{
    background-image: linear-gradient(
    rgba(46, 47, 66, 0.7),
-   rgba(46, 47, 66, 0.7)), url(../images/hero/_desk_hero@1x.jpg);
+   rgba(46, 47, 66, 0.7)), url('../images/hero/_desk_hero@1x.jpg');
  }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero{
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/hero/_desk_hero@2x.jpg);
+    rgba(46, 47, 66, 0.7)), url('../images/hero/_desk_hero@2x.jpg');
 }
 }
 
@@ -306,16 +306,15 @@ border-radius: 2px;
   .hero{
    background-image: linear-gradient(
    rgba(46, 47, 66, 0.7),
-   rgba(46, 47, 66, 0.7)), url(../images/hero/_desk_hero@1x.jpg);
+   rgba(46, 47, 66, 0.7)), url('../images/hero/_desk_hero@1x.jpg');
   
  }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero{
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/hero/_desk_hero@2x.jpg);
+    rgba(46, 47, 66, 0.7)), url('../images/hero/_desk_hero@2x.jpg');
 }
-
 }
 
 
@@ -397,8 +396,6 @@ border-radius: 2px;
  display: block;
  /* outline: 2px solid blue;*/
 }
-
-
 
 
 @media only screen and (min-width: 768px) {
