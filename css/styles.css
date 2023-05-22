@@ -284,14 +284,7 @@ border-radius: 2px;
  font-style: normal;
 }
 
-/*@media only screen and (min-width: 768px) {
-  .address {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    
-  }
-}*/
+
 
 @media only screen and (min-width: 768px) {
   .container-address{
@@ -1184,7 +1177,7 @@ margin-left: 93px;
 
 .footer-link {
   display: inline-block;
-  margin-bottom: 16px;
+
 }
 
 .footer-span {
@@ -1205,10 +1198,7 @@ margin-left: 93px;
   gap: 16px;
 }
 
-.text-networks {
-  margin-bottom: 16px;
-  /*outline: 2px solid green;*/
-}
+
 
 .item-footer {
   display: flex;
