@@ -1447,13 +1447,16 @@ border-radius: 4px;*/
  transform: scale(0.9);
 }
 
+
+@media only screen and (min-width: 428px) {
+  
 .modal {
   position: absolute;
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1462,9 +1465,30 @@ border-radius: 4px;*/
   padding-top: 72px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 24px;
+ padding-bottom: 24px;
 
-}
+}}
+
+@media only screen and (min-width: 768px) {
+  
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%) scale(1);
+  width: 392px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+ padding-bottom: 24px;
+
+}}
 
 .modal-close-btn {
   position: absolute;
