@@ -79,7 +79,7 @@ img {
 
 .container {
   min-width: 320px;
-  width: 428px;
+  max-width: 428px;
   
   padding-left: 16px;
   padding-right: 16px;
@@ -90,14 +90,14 @@ img {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 
 @media only screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
