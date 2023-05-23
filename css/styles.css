@@ -923,7 +923,7 @@ Customers*/
  margin: 0 auto;
 
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1099,7 +1099,8 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .subscribe-form{
     flex-direction: row;
-    align-items: start;
+   justify-content: center;
+   
   
   }
 }
@@ -1108,6 +1109,7 @@ Customers*/
   .subscribe-form{
     flex-direction: row;
     justify-content: start;
+    
   }
 }
 
@@ -1134,10 +1136,10 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .subscribe-input{
 
-    width: 264px;
+    width: 260px;
 
     margin-right: 24px;
-  }}
+  }
 
   @media only screen and (min-width: 1158px) {
     .subscribe-input{
