@@ -1088,6 +1088,7 @@ Customers*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
@@ -1144,8 +1145,12 @@ Customers*/
     }}
   
 
+    
 .submit-btn{
   display: flex;
+  margin-left: 115px;
+
+
 
   width: 165px;
   height: 40px;
