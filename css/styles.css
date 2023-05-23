@@ -1111,10 +1111,11 @@ Customers*/
   opacity: 0.6;
 }
 
+
 .subscribe-input{
-  width: 398px;
+  width: 100%;
   height: 40px;
-  /*padding-left: 16px;*/
+  padding-left: 16px;
   margin-bottom: 16px;
   border: 1px solid var(--white-text-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1145,8 +1146,7 @@ Customers*/
 
 .submit-btn{
   display: flex;
-  margin-left: 115px;
- 
+
   width: 165px;
   height: 40px;
   padding: 8px 24px;
@@ -1262,18 +1262,17 @@ margin-bottom: 16px;
 color: var(--white-text-color);}
 
 
-.subscribe-input{
-/*width: 264px;*/
+/*.subscribe-input{
+width: 264px;
 height: 40px;
 padding-left: 16px;
-/*margin-right: 24px;*/
 border: 1px solid var(--white-text-color);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 color: var(--white-text-color);
 background-color: transparent;
 outline: none;
-}
+}*/
 
 
 .submit-btn{
@@ -1833,7 +1832,7 @@ color: var(--accent-text-color);
   font-family: var(--primary-font);
 font-style: normal;
 font-weight: 700;
-font-size: 36px;
+font-size: 30px;
 line-height: 1.11;
 
 letter-spacing: 0.02em;
@@ -1849,9 +1848,9 @@ color: var(--focus-nav-color);
 
 .address-link-tel{
   font-family: var(--primary-font);
-  width: 353px;
 font-weight: 700;
-font-size: 30px;
+min-width: 300px;
+font-size: 25px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
