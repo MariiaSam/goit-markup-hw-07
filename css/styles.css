@@ -912,10 +912,11 @@ Customers*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .footer-container {
+    margin-left: auto;
     flex-direction: row;
-    justify-content: start;
-    align-items: baseline;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: baseline;
     column-gap: 24px;
 }
 }
@@ -938,8 +939,9 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
 .logo-footer {
   align-items: start;
-  margin-left: 93px;
+  /*margin-left: 93px;*/
   margin-bottom: 0;
+
 }
 }
 
@@ -1062,7 +1064,7 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .form-footer{
   align-items: start;
-margin-left: 93px;
+/*margin-left: 93px;*/
 }}
 
 @media only screen and (min-width: 1158px) {
