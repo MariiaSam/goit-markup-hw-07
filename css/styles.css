@@ -562,7 +562,7 @@ border-radius: 2px;
 
 .subtitle-section-one {
   display: flex;
-  width: 396px;
+  /*width: 396px;*/
   margin-bottom: 8px;
   justify-content: center;
   font-weight: 700;
