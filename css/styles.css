@@ -611,7 +611,7 @@ border-radius: 2px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 351px;
+    /*width: 351px;*/
   }
 }
 
@@ -738,7 +738,7 @@ border-radius: 2px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    text-align: center;
-   padding-bottom: 8px;
+   margin-bottom: 8px;
    color: var(--main-text-color);
   }
 
@@ -785,14 +785,25 @@ Customers*/
 
 .section-four {
   padding: 96px 0;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--main-bgc-color);
 }
+
+
 
 @media only screen and (min-width: 1158px) {
   .section-four { 
      padding: 120px 0;  
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .section-four-container  {
+    max-width: 552px;    
+  }
+}
+
 .title-section-four{
   margin-bottom: 72px;
   font-weight: 700;
@@ -815,7 +826,7 @@ Customers*/
 
 @media only screen and (min-width: 768) {
   .list-section-four{ 
-    justify-content: space-between;
+    justify-content: center;
     gap: 72px 24px;
     margin-right: 0 auto;
   }
@@ -841,7 +852,9 @@ Customers*/
 
 @media only screen and (min-width: 768px) {
   .item-customers{
-    width: calc((100% - 48px) / 3);;
+  
+    width:  calc((100% - 48px) / 3);
+
   }
 }
 
@@ -887,13 +900,17 @@ Customers*/
 .footer {
   padding: 96px 0;
   background-color: var(--secondary-bgc-color);
+ 
 }
+
+
 
 @media screen and (min-width: 1158px) {
   .footer {
     padding: 100px 0;
   }
 }
+
 
 .footer-container {
   display: flex;
@@ -903,6 +920,8 @@ Customers*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .footer-container {
+ margin: 0 auto;
+
     flex-direction: row;
     justify-content: start;
     align-items: baseline;
@@ -929,8 +948,7 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
 .logo-footer {
   align-items: start;
-  margin-left: 93px;
-  margin-bottom: 0;
+  
 }
 }
 
@@ -942,7 +960,7 @@ Customers*/
 }
 
 .footer-link{
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -971,7 +989,7 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .text-footer {
     max-width: 264px;
-  padding-bottom: 72px;}}
+ /*margin-bottom: 72px;*/}}
 
   @media screen and (min-width: 1158px){
     .text-footer {
@@ -998,7 +1016,7 @@ Customers*/
 
 .text-networks{
   justify-content: center;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1053,7 +1071,7 @@ Customers*/
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .form-footer{
   align-items: start;
-margin-left: 93px;
+/*margin-left: 93px;*/
 }}
 
 @media only screen and (min-width: 1158px) {
@@ -1102,7 +1120,7 @@ margin-left: 93px;
 .subscribe-input{
   width: 398px;
   height: 40px;
-  padding-left: 16px;
+  /*padding-left: 16px;*/
   margin-bottom: 16px;
   border: 1px solid var(--white-text-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1124,6 +1142,8 @@ margin-left: 93px;
   @media only screen and (min-width: 1158px) {
     .subscribe-input{
       width: 264px;
+      margin-bottom: 0;
+
       margin-right: 24px;
 
     }}
@@ -1145,6 +1165,7 @@ margin-left: 93px;
   color: var(--white-text-color);
   background-color: var(--iris-bgc-btn);
   border-radius: 4px;
+  border: none;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1157px){
@@ -1858,7 +1879,6 @@ color: var(--iris-bgc-btn);
 
 
 .networks-list{
-  width: 248px;
 display: flex;
 justify-content: center;
 align-items: baseline;
