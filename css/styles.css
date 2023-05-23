@@ -797,7 +797,7 @@ Customers*/
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .section-four-container {
-    min-width: 552px;
+    max-width: 552px;
   
   }
 }
@@ -858,7 +858,6 @@ Customers*/
 @media only screen and (min-width: 1158px) {
    .item-customers{
     width: calc((100% - 120px) /6);
-    
   }
 }
 
