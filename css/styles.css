@@ -912,6 +912,7 @@ Customers*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .footer-container {
+    max-width: 539px;
     margin-left: auto;
     flex-direction: row;
     justify-content: flex-start;
