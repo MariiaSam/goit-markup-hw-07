@@ -795,9 +795,10 @@ Customers*/
   }
 }
 
-@media only screen and (min-width: 768px) {
-   {
-    
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .section-four-container {
+    min-width: 552px;
+  
   }
 }
 
@@ -849,8 +850,8 @@ Customers*/
 
 @media only screen and (min-width: 768px) {
   .item-customers{
-    width: 100%;
-    /*width: 168px;*/
+    width: calc((100% - 48px) /3);
+   
   }
 }
 
