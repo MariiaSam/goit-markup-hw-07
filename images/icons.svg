@@ -82,5 +82,14 @@
 <symbol id="burger" viewBox="0 0 47 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
 </symbol>
+<symbol id="" viewBox="0 0 32 32">
+<path fill="none"  style="stroke: var(--color1, #f4f4f4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M22.667 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
+</symbol>
+</symbol>
+
+<symbol id="modalclose" viewBox="0 0 32 32">
+<path fill="none" stroke="#f4f4f4" style="stroke: var(--color1, #f4f4f4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M22.667 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
+</symbol>
+
   </defs>
 </svg>
