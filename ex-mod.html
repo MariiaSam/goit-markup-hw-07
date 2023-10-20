@@ -32,8 +32,16 @@
 
             <div class="exercise-modal__content"></div>
         </div> 
-        
- 
+      
+        <button type="button" class="exercise-modal-button__favorite" data-id=${_id}>Add to favorites
+          <input type="checkbox" class="exercise-modal-button-checkbox" id="${id}" data-category="${category}"aria-label="card-checkbox-for-recipe-N${id}" />
+      <label for="${id}" class="exercise-modal-checkbox-label">
+        <span class="unchecked-heart">${heartIconUnchecked}</span>
+        <span class="checked-heart">${heartIconChecked}</span>
+      </label>
+        </button>
+        <!-- //  <button type="button" class="exercise-modal-button__favorite" data-id=${_id}>Add to favorites</button> -->
+
 
 <script src="./js/render.js"></script>
 </body>
