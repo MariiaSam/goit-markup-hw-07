@@ -3,28 +3,84 @@
   --dark-color: #242424;
 }
 
-/* .container {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Neue Montreal', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #141414;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 365px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 734px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1406px;
-  }
-} */
-
+/* ========================== Зверху загальні з проєкту*/
 
 .js-backdrop.is-hidden {
   z-index: 696969;
@@ -41,59 +97,64 @@
   z-index: 9999;
 }
 
-
 .exercise-modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  width: 335px;
+  transform: translate(-50%, -50%);
+  width: 320px;
   /* z-index: 10000; */
-  padding: 40px 20px;
+  padding: 10px 0px;
   border-radius: 20px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   color: var(--accent-color);
   background-color: var(--dark-color);
 }
 
-
-  @media screen and (min-width: 768px) {
-    .exercise-modal {
-     width: 704px;
-    padding: 32px;
-  }
-  }
-
-  @media screen and (min-width: 1440px) {
-    .exercise-modal {
-     width: 708px;
+@media screen and (min-width: 375px) {
+  .exercise-modal {
+    width: 335px;
+    padding: 40px 20px;
   }
 }
 
-.exercise-modal__close-btn{
+@media screen and (min-width: 768px) {
+  .exercise-modal {
+    width: 704px;
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .exercise-modal {
+    width: 708px;
+  }
+}
+
+.exercise-modal__close-btn {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 14px;
+  top: 14px;
   width: 24px;
   height: 24px;
   display: block;
-  background-color:  transparent;
+  background-color: transparent;
   border: none;
-  padding: 0;}
-
-  @media screen and (min-width: 768px) {
-    .exercise-modal__close-btn{   
-    width: 28px;
-    height: 28px;
-    }
+  padding: 0;
 }
 
-.exercise-modal__close-icon{
-fill: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .exercise-modal__close-btn {
+    width: 28px;
+    height: 28px;
+  }
+}
 
-  @media screen and (min-width: 768px) {
+.exercise-modal__close-icon {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal__close-icon {
     width: 28px;
     height: 28px;
   }
@@ -102,4 +163,47 @@ fill: var(--accent-color);
 .exercise-modal__content {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.exercise-modal-tumb {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal-tumb {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal-tumb {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal-tumb_card {
+    flex-direction: row;
+  }
+}
+*/ .exercise-modal__img {
+  margin-bottom: 20px;
+}
+
+.exercise-modal__title {
+  font-size: 20px;
+}
+
+.exercise-modal-list {
+  list-style: none;
 }
