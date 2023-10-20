@@ -35,7 +35,7 @@ function renderExerciseModal({
 }) {
   return ` 
  <img class="exercise-modal__img" src="${gifUrl}"  alt="exercise" width="270" height="259"/> 
- <h2 class="exercise-modal__title>"${name}</h2> 
+ <$ class="exercise-modal__title">${name}</h2> 
 
  <div class="exercise-modal-rating">
  <p class="exercise-modal-rating__number">${rating}</p>
@@ -49,7 +49,7 @@ function renderExerciseModal({
  </li>
  <li class="exercise-modal-list-item">
    <h3>Body Part</h3>
-   <p><${bodyPart}/p>
+   <p>${bodyPart}</p>
  </li>
  <li class="exercise-modal-list-item">
    <h3>Equipment</h3>
@@ -57,11 +57,11 @@ function renderExerciseModal({
  </li>
  <li class="exercise-modal-list-item">
    <h3>Popular</h3>
-   <spam>${popularity}</spam>
+   <p>${popularity}</p>
  </li>
  <li class="exercise-modal-list-item">
    <h3>Burned calories</h3>
-   <spam>${burnedCalories}/${time}</spam>
+   <p>${burnedCalories}/${time}min</p>
  </li>
 </ul>
 
@@ -75,10 +75,10 @@ function renderExerciseModal({
 <label class="exercise-modal-checkbox__label">
 <span class="unchecked-heart">${heartIconUnchecked}</span>
 <span class="checked-heart">${heartIconChecked}</span>
-</label
+</label>
 </div>
 
 
- <button type="button" class="exercise-modal-button__">Give a rating</button>
-</div>`;
+ <button type="button" class="exercise-modal-button__rating">Give a rating</button>
+</div>`
 }
