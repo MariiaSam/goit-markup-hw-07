@@ -1,88 +1,32 @@
 :root {
   --accent-color: #f4f4f4;
   --dark-color: #242424;
+  --transition: 300ms linear;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Neue Montreal', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  color: #141414;
-  background-color: #f4f4f4;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  font-family: inherit;
-  border: none;
-  cursor: pointer;
-}
-
-input {
-  font-family: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.is-hidden {
-  display: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
+/* .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-/* ========================== Зверху загальні з проєкту*/
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1406px;
+  }
+} */
 
-.js-backdrop.is-hidden {
+/* .js-backdrop.is-hidden {
   z-index: 696969;
   width: 100%;
   height: 100%;
@@ -91,6 +35,18 @@ img {
   top: 0;
   left: 0;
   overflow: auto;
+} */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(4, 4, 4, 0.4);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .js-backdrop {
@@ -102,19 +58,15 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
+  width: 335px;
   /* z-index: 10000; */
-  padding: 10px 0px;
+  padding: 40px 20px;
   border-radius: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   color: var(--accent-color);
   background-color: var(--dark-color);
-}
-
-@media screen and (min-width: 375px) {
-  .exercise-modal {
-    width: 335px;
-    padding: 40px 20px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -132,8 +84,8 @@ img {
 
 .exercise-modal__close-btn {
   position: absolute;
-  right: 14px;
-  top: 14px;
+  right: 16px;
+  top: 16px;
   width: 24px;
   height: 24px;
   display: block;
@@ -154,7 +106,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .exercise-modal__close-icon {
+  .exercise-modal__close-btn {
     width: 28px;
     height: 28px;
   }
@@ -165,45 +117,79 @@ img {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
-  .exercise-modal__content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-.exercise-modal-tumb {
+.exercise-modal__content {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .exercise-modal-tumb {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .exercise-modal-tumb {
     display: flex;
     flex-direction: row;
+    gap: 28px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .exercise-modal-tumb_card {
-    flex-direction: row;
-  }
-}
-*/ .exercise-modal__img {
-  margin-bottom: 20px;
 }
 
 .exercise-modal__title {
+  margin-bottom: 0;
+
   font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal__title {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+  }
+}
+
+.exercise-modal-rating {
+  display: flex;
+  gap: 2px;
+  align-items: center;
 }
 
 .exercise-modal-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal-list {
+    gap: 16px;
+  }
+}
+
+.exercise-modal-list__title {
+  font-style: 12px;
+  line-height: 1.5;
+  color: var(--accent-color);
+  opacity: 0.4;
+}
+
+.exercise-modal-list__text,
+.exercise-modal__description {
+  color: var(--accent-color);
+  font-weight: 500;
+  line-height: 1.28;
+  color: var(--accent-color);
+}
+
+.exercise-modal__description {
+  opacity: 0.6;
+}
+
+.exercise-modal-button {
+  display: flex;
+}
+
+.exercise-modal-favorite {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
 }
