@@ -1,0 +1,82 @@
+.is-hidden {
+  display: none;
+}
+
+.exercise-modal_button {
+  display: flex;
+}
+
+.exercise-modal-button__rating,
+.exercise-modal-button__remove,
+.exercise-modal-button__favorite {
+  background-color: red;
+}
+
+.exercise-modal-button {
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.exercise-modal-button__favorite,
+.exercise-modal-button__rating,
+.exercise-modal-button__remove {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: blueviolet;
+  color: wheat;
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-modal-button__favorite,
+  .exercise-modal-button__rating,
+  .exercise-modal-button__remove {
+    font-size: 16px;
+    transition: all var(--transition);
+  }
+}
+
+.exercise-modal-button__remove {
+  width: 228px;
+  height: 48px;
+}
+
+.exercise-modal-button__favorite:hover,
+.exercise-modal-button__favorite:focus,
+.exercise-modal-button__remove:hover,
+.exercise-modal-button__remove:focus {
+  background-color: wheat;
+  color: blueviolet;
+  border: 1px solid var(--accent-color);
+}
+
+.exercise-modal-button__favorite:hover .modal-exercise-heart-icon,
+.exercise-modal-button__favorite:focus .modal-exercise-heart-icon {
+  fill: transparent;
+  stroke: red;
+}
+
+.exercise-modal-button__rating {
+  background-color: transparent;
+  color: wheat;
+  border: 1px solid blueviolet;
+  transition: all var(--transition);
+}
+
+.exercise-modal-button__rating:hover,
+.exercise-modal-button__rating:focus {
+  background-color: blueviolet;
+  color: wheat;
+  border: none;
+}
+
+.modal-exercise-heart-icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--dark-color);
+  fill: transparent;
+}

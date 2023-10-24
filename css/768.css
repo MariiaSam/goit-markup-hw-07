@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+  .exercise-modal {
+    width: 704px;
+  }
+
+  .exercise-modal__close-btn {
+    right: 16px;
+    top: 16px;
+    width: 28px;
+    height: 28px;
+    transition: filter var(--transition);
+  }
+
+  .exercise-modal__content {
+    width: 708px;
+    padding: 32px;
+  }
+
+  .exercise-modal-tumb {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 64px;
+    gap: 28px;
+  }
+
+  .exercise-modal__img {
+    margin-bottom: 0px;
+    width: 270px;
+  }
+
+  .exercise-modal__title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+  }
+
+  .exercise-modal-rating__number {
+    margin-bottom: 24px;
+  }
+
+  .exercise-modal-tumb_list {
+    align-content: space-around;
+    margin-bottom: 24px;
+  }
+
+  .exercise-modal-list {
+    gap: 16px;
+  }
+
+  .exercise-modal-button__rating {
+    width: 122px;
+  }
+
+  .exercise-modal-button__remove {
+    font-size: 16px;
+  }
+}
